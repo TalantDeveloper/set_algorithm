@@ -1,4 +1,3 @@
-
 def sorted_array(numbers: list) -> list:
     lenth = len(numbers)
     for i in range(lenth):
@@ -10,6 +9,7 @@ def sorted_array(numbers: list) -> list:
                 numbers[i], numbers[j] = numbers[j], numbers[i]
 
     return numbers
+
 
 numbers = [1, 9, 3, -8, 4, 5, 2, 7]
 print(numbers)
