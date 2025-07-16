@@ -10,11 +10,11 @@ def sort_list(nums: list) -> list:
     print(list_1, list_2)
     for i in range(1, len(list_1)):
         for j in range(len(list_1) - 1):
-            if list_1[i] < list_1[j]:
+            if list_1[i] > list_1[j]:
                 list_1[i], list_1[j] = list_1[j], list_1[i]
     for i in range(1, len(list_2)):
         for j in range(len(list_2) - 1):
-            if list_2[i] > list_2[j]:
+            if list_2[i] < list_2[j]:
                 list_2[i], list_2[j] = list_2[j], list_2[i]
     return list_1 + list_2
 

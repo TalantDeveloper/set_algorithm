@@ -1,3 +1,6 @@
+# Berilgan massivning elementlarining moduli bo'yicha o'sish
+# tartibida tartiblash algoritmi va dasturiy ta'minotini tuzing.
+
 def sorted_array(numbers: list) -> list:
     lenth = len(numbers)
     for i in range(lenth):
@@ -5,9 +8,8 @@ def sorted_array(numbers: list) -> list:
             numbers[i] = -numbers[i]
     for i in range(lenth):
         for j in range(lenth):
-            if numbers[i] > numbers[j]:
+            if numbers[i] < numbers[j]:
                 numbers[i], numbers[j] = numbers[j], numbers[i]
-
     return numbers
 
 

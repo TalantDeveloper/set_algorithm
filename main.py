@@ -1,16 +1,20 @@
-# This is a sample Python script.
+#  1. Berilgan n ta haqiqiy sonlar orasida qo'shnilaridan (oldingi va keyingi sonlardan)
+#  katta bo'lgan sonlar miqdorini topish algoritmi va dasturi tuzilsin.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def greater_between():
+    n = int(input("n ="))
+
+    nums = []
+    for i in range(n):
+        num = float(input(f"{i + 1}-element="))
+        nums.append(num)
+
+    t = 0
+    for i in range(1, n - 1):
+        if nums[i] > nums[i - 1] and nums[i] > nums[i + 1]:
+            t += 1
+
+    return f"Natija: {t}"
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(greater_between())

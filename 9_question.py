@@ -1,3 +1,5 @@
+
+
 def quelity(numbers: list) -> int:
     result = 1
     length = len(numbers)
