@@ -1,7 +1,7 @@
 # 17 new Massiv elementlarini avval barcha nol
 import random
 
-print(random.randint(1, 38))
+print(random.randint(1, 41))
 
 # n = int(input("N = "))
 # nums = []
